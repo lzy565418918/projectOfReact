@@ -5,6 +5,7 @@ import Life from './Life'
 import StateDemo from './StateDemo'
 import Refdom from './Refdom'
 import Parent from './compoents/Parent'
+import Compose from './Compose'
 
 export class App extends React.Component{
   constructor(props) {
@@ -34,7 +35,10 @@ export class App extends React.Component{
         <StateDemo/> */}
         {/* <Refdom ref={this.refdom} />
         <button onClick={() => { this.changee('点击change') }}>点击change</button> */}
-        <Parent/>
+        {/* <Parent/> */}
+        <Compose>
+          <i>合体</i>
+        </Compose>
       </div>
     )
   }
