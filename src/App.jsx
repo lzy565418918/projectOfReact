@@ -4,6 +4,7 @@ import Statestudy from './Statestudy'
 import Life from './Life'
 import StateDemo from './StateDemo'
 import Refdom from './Refdom'
+import Parent from './compoents/Parent'
 
 export class App extends React.Component{
   constructor(props) {
@@ -31,8 +32,9 @@ export class App extends React.Component{
         {/* <Statestudy />
         <Life title={this.state.title} changefa={this.receiveSon} />
         <StateDemo/> */}
-        <Refdom ref={this.refdom} />
-        <button onClick={() => { this.changee('点击change') }}>点击change</button>
+        {/* <Refdom ref={this.refdom} />
+        <button onClick={() => { this.changee('点击change') }}>点击change</button> */}
+        <Parent/>
       </div>
     )
   }
