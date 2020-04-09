@@ -35,10 +35,10 @@ export class App extends React.Component{
         <StateDemo/> */}
         {/* <Refdom ref={this.refdom} />
         <button onClick={() => { this.changee('点击change') }}>点击change</button> */}
-        {/* <Parent/> */}
-        <Compose>
+        <Parent/>
+        {/* <Compose>
           <i>合体</i>
-        </Compose>
+        </Compose> */}
       </div>
     )
   }
